@@ -1,5 +1,11 @@
 # bun
 
+To create a new repo with this project template using the gh cli:
+
+```bash
+gh repo create $PROJECT_NAME --template jeffgca/bun-tpl --private --clone'
+```
+
 To install dependencies:
 
 ```bash
@@ -12,4 +18,14 @@ To run:
 bun run index.ts
 ```
 
-This project was created using `bun init` in bun v1.3.2. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+To run tests:
+
+```bash
+bun test
+```
+
+To compile to a standalone binary:
+
+```bash
+bun cc
+```
