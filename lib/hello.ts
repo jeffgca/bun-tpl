@@ -1,5 +1,5 @@
 export interface HelloOptions {
-  [key: string]: any;
+  [key: string]: string | number | boolean;
 }
 
 export class Hello {
