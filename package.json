@@ -11,7 +11,7 @@
     "typescript-eslint": "^8.48.0"
   },
   "scripts": {
-    "build": "scripts/build.sh",
+    "cc": "scripts/build.sh",
     "eslint": "eslint . --ext .ts --cache"
   },
   "peerDependencies": {
