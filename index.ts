@@ -1,4 +1,4 @@
-import { Hello, HelloOptions } from "./lib/hello.js";
+import { Hello, type HelloOptions } from "./lib/hello.js";
 
 const hello = new Hello({
   greeting: "Hi",
