@@ -7,7 +7,7 @@
     "@types/bun": "latest"
   },
   "scripts": {
-    "cc": "bun build --compile --target=bun ./index.ts"
+    "build": "scripts/build.sh"
   },
   "peerDependencies": {
     "typescript": "^5"
