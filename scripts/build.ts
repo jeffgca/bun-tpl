@@ -55,8 +55,14 @@ const argv = yargs(hideBin(process.argv))
     description: `Build only a specific target. Valid keys: ${Object.keys(targetTripleMap).join(", ")}`,
     demandOption: false,
   })
+  .option("outdir", {
+    alias: "o",
+    type: "string",
+    description: "Output directory for build artifacts",
+    default: "./dist",
+  })
   .help()
-  .parseSync() as { target?: string };
+  .parseSync() as { target?: string; outdir: string };
 
 // Determine targets to build
 const appTargets: string[] = argv.target ? [argv.target] : (packageJson.appConfig.appTargets as string[]);
@@ -70,13 +76,14 @@ for (const target of appTargets) {
     console.log(`Building for target: ${target}`);
 
     const config = {
-      entrypoints: ["./index.ts"],
-      outdir: `./dist/${targetTripleMap[target]}`,
-      target: target,
+      entrypoints: ["./index.ts", "./package.json"],
+      outdir: `${argv.outdir}/${targetTripleMap[target]}`,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      target: target as any,
       compile: true,
     };
 
-    // console.log('config', config)
+    // console.log("config", config);
 
     await Bun.build(config);
   }

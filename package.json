@@ -13,7 +13,8 @@
   },
   "scripts": {
     "cc": "bun ./scripts/build.ts",
-    "eslint": "eslint . --ext .ts --cache"
+    "eslint": "eslint . --ext .ts --cache",
+    "chk": "tsc --noEmit"
   },
   "peerDependencies": {
     "typescript": "^5"
