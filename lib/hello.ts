@@ -1,15 +1,15 @@
 export interface HelloOptions {
-  [key: string]: string | number | boolean;
+	[key: string]: string | number | boolean
 }
 
 export class Hello {
-  options: HelloOptions;
+	options: HelloOptions
 
-  constructor(options?: HelloOptions) {
-    this.options = options || {};
-  }
+	constructor(options?: HelloOptions) {
+		this.options = options || {}
+	}
 
-  greet(name: string): string {
-    return `Hello ${name} from Bun!`;
-  }
+	greet(name: string): string {
+		return `Hello ${name} from Bun!`
+	}
 }

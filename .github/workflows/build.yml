@@ -8,7 +8,6 @@ on:
   workflow_dispatch:
 
 jobs:
-
   build-test:
     name: Build + Version Check
     runs-on: ${{ matrix.os }}
@@ -56,7 +55,7 @@ jobs:
 
       - name: Build matched binary (clean dist)
         run: |
-          bun ./scripts/build.ts --target ${{ matrix.target }} 
+          bun ./scripts/build.ts --target ${{ matrix.target }}
         shell: bash
 
       - name: List dist contents
