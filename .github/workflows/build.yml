@@ -20,11 +20,11 @@ jobs:
             target: bun-linux-x64
             triple: x86_64-unknown-linux-gnu
             shell: bash
-#          - os: macos-14
-#            label: macos-x86_64
-#            target: bun-darwin-x64
-#            triple: x86_64-apple-darwin
-#            shell: bash
+          - os: macos-15-intel
+            label: macos-x86_64
+            target: bun-darwin-x64
+            triple: x86_64-apple-darwin
+            shell: bash
           - os: macos-14
             label: macos-arm64
             target: bun-darwin-arm64
