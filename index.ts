@@ -1,5 +1,5 @@
 import { Hello, type HelloOptions } from './lib/hello.js'
-import packageJson from './package.json' assert { type: 'json' }
+import packageJson from './package.json' with { type: 'json' }
 import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
 
