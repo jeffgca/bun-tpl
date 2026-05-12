@@ -30,7 +30,7 @@ jobs:
             target: bun-darwin-arm64
             triple: aarch64-apple-darwin
             shell: bash
-          - os: windows-latest
+          - os: windows-2025-vs2026
             label: windows-x86_64
             target: bun-windows-x64
             triple: x86_64-pc-windows-msvc
