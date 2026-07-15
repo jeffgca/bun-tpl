@@ -6,11 +6,11 @@
 	"version": "0.0.1",
 	"devDependencies": {
 		"@types/bun": "latest",
-		"eslint": "^9.39.1",
-		"globals": "^16.5.0",
-		"jiti": "^2.6.1",
-		"prettier": "^3.7.4",
-		"typescript-eslint": "^8.48.0"
+		"eslint": "^10.4.0",
+		"globals": "^17.6.0",
+		"jiti": "^2.7.0",
+		"prettier": "^3.8.3",
+		"typescript-eslint": "^8.60.0"
 	},
 	"scripts": {
 		"cc": "bun ./scripts/build.ts",
@@ -18,7 +18,7 @@
 		"chk": "tsc --noEmit"
 	},
 	"peerDependencies": {
-		"typescript": "^5"
+		"typescript": "^5.9.3"
 	},
 	"appConfig": {
 		"appBaseName": "clowncar",
